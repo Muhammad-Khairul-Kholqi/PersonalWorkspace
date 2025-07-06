@@ -1,0 +1,41 @@
+resources/views/
+│
+├── layouts/               # Layout dasar (master layout)
+│   ├── app.blade.php      # Layout utama aplikasi
+│   └── auth.blade.php     # Layout khusus halaman otentikasi (opsional)
+│
+├── partials/              # Komponen kecil (reusable) seperti header, footer, navbar
+│   ├── header.blade.php
+│   ├── footer.blade.php
+│   ├── navbar.blade.php
+│   └── sidebar.blade.php
+│
+├── components/            # Blade components (jika menggunakan Blade components)
+│   ├── alert.blade.php
+│   └── card.blade.php
+│
+├── pages/                 # Halaman umum (frontend)
+│   ├── home.blade.php
+│   ├── about.blade.php
+│   └── contact.blade.php
+│
+├── dashboard/             # Halaman khusus dashboard/admin
+│   ├── index.blade.php
+│   ├── users/
+│   │   ├── index.blade.php
+│   │   ├── show.blade.php
+│   │   └── edit.blade.php
+│   └── settings.blade.php
+│
+├── auth/                  # View untuk autentikasi (login, register, dsb.)
+│   ├── login.blade.php
+│   ├── register.blade.php
+│   └── forgot-password.blade.php
+│
+└── errors/                # View untuk error handling
+    ├── 404.blade.php
+    └── 500.blade.php
+
+
+
+
