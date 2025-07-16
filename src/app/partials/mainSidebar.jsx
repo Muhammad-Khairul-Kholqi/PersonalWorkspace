@@ -40,23 +40,16 @@ export default function MainSidebar({ isCollapsed, setIsCollapsed, isMobileOpen,
                     {!isCollapsed && (
                         <h1 className="text-xl font-bold">Neuro Code</h1>
                     )}
-                    <div className="flex items-center gap-2">
-                        {!isCollapsed && (
-                            <div className="cursor-pointer border border-gray-200 hover:bg-gray-100 flex items-center justify-center w-8 h-8 rounded-md transition-colors">
-                                <Moon className="w-4 h-4 text-gray-800" />
-                            </div>
-                        )}
 
-                        <div
-                            className="cursor-pointer border border-gray-200 hover:bg-gray-100 flex items-center justify-center w-8 h-8 rounded-md transition-colors"
-                            onClick={handleCollapseToggle}
-                        >
-                            {isCollapsed ? (
-                                <ChevronRight className="w-5 h-5 text-gray-800" />
-                            ) : (
-                                <ChevronLeft className="w-5 h-5 text-gray-800" />
-                            )}
-                        </div>
+                    <div
+                        className="cursor-pointer border border-gray-200 hover:bg-gray-100 flex items-center justify-center w-8 h-8 rounded-md transition-colors"
+                        onClick={handleCollapseToggle}
+                    >
+                        {isCollapsed ? (
+                            <ChevronRight className="w-5 h-5 text-gray-800" />
+                        ) : (
+                            <ChevronLeft className="w-5 h-5 text-gray-800" />
+                        )}
                     </div>
                 </div>
 
@@ -88,6 +81,10 @@ export default function MainSidebar({ isCollapsed, setIsCollapsed, isMobileOpen,
                             </div>
                         )}
 
+                        {!isCollapsed && (
+                            <p className="text-xs font-medium text-gray-500 mt-5">MAIN MENU</p>
+                        )}
+
                         {/* Navigation Links */}
                         <NavLists isCollapsed={isCollapsed} />
 
@@ -102,8 +99,8 @@ export default function MainSidebar({ isCollapsed, setIsCollapsed, isMobileOpen,
 
                         <div className="mt-5 space-y-3">
                             <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
-                                <Folder className="w-5 h-5 text-gray-700" />
-                                {!isCollapsed && <span className="text-sm font-medium">Forlder Name 1</span>}
+                                <Folder className="w-4 h-4 text-gray-700" />
+                                {!isCollapsed && <span className="text-sm font-medium text-gray-700">Forlder Name 1</span>}
                             </div>
                         </div>
                     </div>

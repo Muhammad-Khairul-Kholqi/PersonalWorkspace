@@ -19,15 +19,8 @@ export default function NavLists({ isCollapsed }) {
 
             <NavItem
                 href="/pages/workspace"
-                icon="Settings"
-                label="Settings"
-                isCollapsed={isCollapsed}
-            />
-
-            <NavItem
-                href="/pages/workspace"
                 icon="Trash"
-                label="Bin"
+                label="Trash"
                 isCollapsed={isCollapsed}
             />
         </div>
